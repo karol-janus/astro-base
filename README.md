@@ -1,31 +1,3 @@
-<p align="center">
-  <img src="src/assets/branding/logo-full.svg" alt="Velocity" width="370" />
-</p>
-
-<p align="center">
-  <strong>Astro 6 Boilerplate</strong> — A production-ready starter template built on Astro 6 and Tailwind CSS v4.
-</p>
-
-<p align="center">
-  <a href="https://astro.build"><img src="https://img.shields.io/badge/Astro-6.0-bc52ee?logo=astro&logoColor=white" alt="Astro" /></a>
-  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind-4.0-38bdf8?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
-  <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-5.7-3178c6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-22c55e" alt="License" /></a>
-</p>
-
----
-
-## What's Included
-
-- **57 components** across 7 categories — all accessible, typed, and dark-mode ready
-- **Design token system** with OKLCH colors, fluid typography, and two built-in themes
-- **SEO toolkit** — meta tags, JSON-LD, sitemap, robots.txt, and auto-generated OG images
-- **Content collections** — type-safe blog, pages, authors, and FAQs with Zod validation
-- **API routes** — contact form and newsletter endpoints with validation
-- **React islands** — optional client-side interactivity where needed
-- **i18n-ready** — locale-aware schemas; full i18n via the [CLI](https://github.com/southwellmedia/create-velocity-astro)
-
----
 
 ## Quick Start
 
