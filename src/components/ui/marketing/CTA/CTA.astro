@@ -26,10 +26,10 @@ const sectionStyles = {
 };
 
 const sizes = {
-  sm: 'py-[var(--space-section-sm)]',
-  md: 'py-[var(--space-section-md)]',
-  lg: 'py-[var(--space-section-lg)]',
-  xl: 'py-[var(--space-section-xl)]',
+  sm: 'py-space-section-sm',
+  md: 'py-space-section-md',
+  lg: 'py-space-section-lg',
+  xl: 'py-space-section-xl',
 };
 
 const maxWidths = {
@@ -50,11 +50,11 @@ const hasActionsSlot = Astro.slots.has('actions');
   class={cn(sectionStyles[variant], sizes[size], className)}
   {...attrs}
 >
-  <div class="mx-auto max-w-6xl px-6">
+  <div class="container">
     <div class={cn(maxWidths[maxWidth], 'text-center mx-auto')}>
       {/* Logo Slot - renders before heading */}
       {hasLogoSlot && (
-        <div class="mb-[var(--space-stack-lg)]">
+        <div class="mb-space-content-lg">
           <slot name="logo" />
         </div>
       )}
@@ -62,7 +62,7 @@ const hasActionsSlot = Astro.slots.has('actions');
       {/* Heading Slot */}
       {hasHeadingSlot && (
         <div class={cn(
-          'mb-[var(--space-heading-gap)]',
+          'mb-space-heading',
           '[&>h2]:font-display [&>h2]:text-3xl md:[&>h2]:text-4xl lg:[&>h2]:text-5xl [&>h2]:font-bold [&>h2]:text-balance',
           '[&>h2]:text-foreground'
         )}>

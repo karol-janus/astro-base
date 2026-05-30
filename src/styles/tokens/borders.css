@@ -1,0 +1,31 @@
+/* =============================================================================
+   Velocity Design Tokens - Borders
+   =============================================================================
+   Semantic border tokens bridge primitive widths/colors to Tailwind utilities.
+   ============================================================================= */
+
+:root {
+  /* ---------------------------------------------------------------------------
+     Primitive Border Widths
+     --------------------------------------------------------------------------- */
+  --border-raw-width-none: 0;
+  --border-raw-width-thin: 1px;
+  --border-raw-width-default: 1px;
+  --border-raw-width-heavy: 2px;
+
+  /* ---------------------------------------------------------------------------
+     Semantic Border Widths
+     --------------------------------------------------------------------------- */
+  --semantic-border-width-none: var(--border-raw-width-none);
+  --semantic-border-width-thin: var(--border-raw-width-thin);
+  --semantic-border-width-default: var(--border-raw-width-default);
+  --semantic-border-width-heavy: var(--border-raw-width-heavy);
+
+  /* ---------------------------------------------------------------------------
+     Semantic Border Colors
+     --------------------------------------------------------------------------- */
+  --border-color-default: var(--border);
+  --border-color-muted: var(--border-subtle);
+  --border-color-strong: var(--border-strong);
+  --border-color-invert: var(--border-invert);
+}

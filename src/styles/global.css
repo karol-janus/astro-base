@@ -8,6 +8,7 @@
 @import './tokens/colors.css';
 @import './tokens/typography.css';
 @import './tokens/spacing.css';
+@import './tokens/borders.css';
 
 /* Self-hosted fonts via Fontsource (CSP-safe, no external requests) */
 @import '@fontsource-variable/manrope';
@@ -48,13 +49,21 @@
   --color-card-border: var(--card-border);
 
   --color-border: var(--border);
+  --color-border-default: var(--border-color-default);
+  --color-border-muted: var(--border-color-muted);
   --color-border-strong: var(--border-strong);
+  --color-border-invert: var(--border-color-invert);
 
   --color-ring: var(--ring);
 
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-error: var(--error);
+  --color-social-x: var(--social-x);
+  --color-social-linkedin: var(--social-linkedin);
+  --color-terminal-close: var(--terminal-close);
+  --color-terminal-minimize: var(--terminal-minimize);
+  --color-terminal-maximize: var(--terminal-maximize);
 
   /* Inverted/Contrast Sections */
   --color-surface-invert: var(--surface-invert);
@@ -83,18 +92,44 @@
   --color-brand-800: var(--brand-800);
   --color-brand-900: var(--brand-900);
 
-  /* Font Sizes - matches original design scale */
-  --font-size-xs: 0.75rem;     /* 12px */
-  --font-size-sm: 0.875rem;    /* 14px */
-  --font-size-base: 1rem;      /* 16px */
-  --font-size-lg: 1.125rem;    /* 18px */
-  --font-size-xl: 1.25rem;     /* 20px */
-  --font-size-2xl: 1.5rem;     /* 24px */
-  --font-size-3xl: 1.875rem;   /* 30px */
-  --font-size-4xl: 2.25rem;    /* 36px */
-  --font-size-5xl: 3rem;       /* 48px */
-  --font-size-6xl: 3.75rem;    /* 60px */
-  --font-size-7xl: 4.5rem;     /* 72px */
+  /* Font Sizes - token-backed for Figma remapping */
+  --font-size-xs: var(--text-xs);
+  --font-size-sm: var(--text-sm);
+  --font-size-base: var(--text-base);
+  --font-size-lg: var(--text-lg);
+  --font-size-xl: var(--text-xl);
+  --font-size-2xl: var(--text-2xl);
+  --font-size-3xl: var(--text-3xl);
+  --font-size-4xl: var(--text-4xl);
+  --font-size-5xl: var(--text-5xl);
+  --font-size-6xl: var(--text-6xl);
+  --font-size-7xl: var(--text-7xl);
+
+  /* Semantic spacing utilities */
+  --spacing-space-container-sm: var(--space-container-sm);
+  --spacing-space-container-md: var(--space-container-md);
+  --spacing-space-container-lg: var(--space-container-lg);
+  --spacing-space-container-xl: var(--space-container-xl);
+
+  --spacing-space-section-sm: var(--space-section-sm);
+  --spacing-space-section-md: var(--space-section-md);
+  --spacing-space-section-lg: var(--space-section-lg);
+  --spacing-space-section-xl: var(--space-section-xl);
+  --spacing-space-section-gap: var(--space-section-gap);
+  --spacing-space-section-gap-sm: var(--space-section-gap-sm);
+  --spacing-space-section-gap-md: var(--space-section-gap-md);
+  --spacing-space-section-gap-lg: var(--space-section-gap-lg);
+
+  --spacing-space-content-sm: var(--space-content-sm);
+  --spacing-space-content-md: var(--space-content-md);
+  --spacing-space-content-lg: var(--space-content-lg);
+  --spacing-space-content-gap: var(--space-content-gap);
+  --spacing-space-heading: var(--space-heading-gap);
+
+  /* Semantic border width utilities */
+  --border-width-thin: var(--semantic-border-width-thin);
+  --border-width-default: var(--semantic-border-width-default);
+  --border-width-heavy: var(--semantic-border-width-heavy);
 
   /* Border Radius - theme-controlled */
   --radius-sm: var(--theme-radius-sm);
@@ -256,13 +291,7 @@
     width: 100%;
     max-width: var(--container-max);
     margin-inline: auto;
-    padding-inline: 1.5rem;
-  }
-
-  @media (min-width: 768px) {
-    .container {
-      padding-inline: 2rem;
-    }
+    padding-inline: var(--space-container-xl);
   }
 
   /* Screen reader */

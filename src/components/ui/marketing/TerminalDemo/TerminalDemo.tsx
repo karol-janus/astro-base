@@ -196,9 +196,9 @@ export function TerminalDemo() {
     <div className="w-full max-w-lg overflow-hidden rounded-md border border-border-invert bg-surface-invert shadow-xl mx-auto lg:mx-0">
       {/* Window Chrome */}
       <div className="flex items-center gap-2 border-b border-border-invert bg-surface-invert-secondary px-4 py-3">
-        <div className="h-3 w-3 rounded-full bg-[#FF5F56]" />
-        <div className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
-        <div className="h-3 w-3 rounded-full bg-[#27C93F]" />
+        <div className="h-3 w-3 rounded-full bg-terminal-close" />
+        <div className="h-3 w-3 rounded-full bg-terminal-minimize" />
+        <div className="h-3 w-3 rounded-full bg-terminal-maximize" />
         <span className="ml-2 text-xs font-mono text-on-invert-muted">terminal</span>
       </div>
 
